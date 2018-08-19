@@ -19,9 +19,6 @@ public class DBConnection {
 		try {
 			Class.forName(Constants.dbClass);
 			con = DriverManager.getConnection(Constants.dbUrl, Constants.dbUser, Constants.dbPwd);
-			if(con == null) {
-				System.out.println("Problem with DB connection");
-			}
 		} catch (Exception e) {
 			//throw e;
 			e.printStackTrace();

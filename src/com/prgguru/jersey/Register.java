@@ -42,9 +42,6 @@ public class Register {
 	private int registerUser(String name, String uname, String pwd) {
 		System.out.println("Inside checkCredentials");
 		int result = 3;
-		System.out.println(name);
-		System.out.println(uname);
-		System.out.println(pwd);
 		if (Utility.isNotNull(uname) && Utility.isNotNull(pwd)) {
 			try {
 				if (DBConnection.insertUser(name, uname, pwd)) {
